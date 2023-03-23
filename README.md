@@ -1,3 +1,3 @@
 # learning-web-dev
 
-This is a sample project for learning basics of HTML.
+This is a sample project for learning basics for web development.
