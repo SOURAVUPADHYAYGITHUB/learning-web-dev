@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Super Title</title>
+	<link rel="icon" type="image/png" href="./images/site-logo.png"/>
 </head>
 <body>
-
 <h1>Hello</h1>
 <h2>Hello</h2>
 <h3>Hello</h3>
@@ -91,7 +91,7 @@ Here please checkout my <a href="./index.html" target="_parent">website</a>.<br>
 
 
 
-<img src="./images/sample1.jpg" style="width: 100%; border: 20px blue yellow;" />
+<img src="./../test/../images/sample1.jpg" style="width: 100%; border: 20px blue yellow;" />
 
 
 <video controls width="100%" height="100%">
@@ -101,7 +101,55 @@ Your browser does not support the audio element.
 </video>
 
 
+<form action="./index.html" method="GET">
+	<br/><label for="userId">USER ID: </label>
+	<input id="userId" name="id" value="007" required readonly />
+
+	<br/><label for="userName">Enter your name: </label>
+	<input id="userName" name="user" required maxlength="10" />
+	
+	<br/>Enter your password: <input name="password" minlength="3" type="password" required />
+	
+	<br/>Enter your age: <input name="age" type="number" />
+	
+	<br/>Select gender: 
+
+	<label for="maleGender">Male</label>
+	<input id="maleGender" name="gender" value="male" type="radio"/>
+	
+	<label for="femaleGender">Female</label>
+	<input id="femaleGender" value="female" name="gender" type="radio">
+	
+	<br/>Choose subjects:
+
+	<br/><label for="math">Maths</label>
+	<input id="math" type="checkbox" name="subjects" value="math">
+	<br/><label for="science">Science</label>
+	<input id="science" type="checkbox" name="subjects" value="science">
+	<br/><label for="english">English</label>
+	<input id="english" type="checkbox" name="subjects" value="english">
+	<br/><label for="sst">SST</label>
+	<input id="sst" type="checkbox" name="subjects" value="sst">
 
 
+	<br/><label for="status">Marriage status</label>
+	<select id="status" name="status" required>
+		<option value=""></option>
+		<optgroup label="Alive">
+			<option value="single">Single</option>
+			<option value="married">Married</option>
+		</optgroup>
+	</select>
+
+	<br/>
+	<label for="address">Address</label>
+	<textarea id="address" name="address">HELLLO HOW ADSAD </textarea>
+
+	<br/>
+	<label for="image">Profile Image</label>
+	<input id="image" type="file" accept="image/*" />
+
+	<br/><br/><br/><button type="submit">Submit</button>
+</form>
 </body>
 </html>
